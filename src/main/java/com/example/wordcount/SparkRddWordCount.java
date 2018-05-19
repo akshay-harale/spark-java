@@ -1,4 +1,4 @@
-package com.example;
+package com.example.wordcount;
 
 import scala.Tuple2;
 
@@ -14,7 +14,7 @@ import java.util.regex.Pattern;
  * Hello world!
  *
  */
-public class App {
+public class SparkRddWordCount {
     public static void main( String[] args ) {
 
         System.out.println( "Hello World!" );
