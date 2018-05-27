@@ -18,11 +18,7 @@ public class SparkRddWordCount {
     public static void main( String[] args ) {
 
         System.out.println( "Hello World!" );
-        SparkSession spark = SparkSession
-                .builder()
-                .appName("JavaWordCount")
-                .master("local[*]")
-                .getOrCreate();
+        SparkSession spark=SparkUtil.getSparkSession("WordCount","local[*]");
 
         JavaRDD<String> lines = spark.read().textFile("/home/synerzip/IdeaProjects/sample/pom.xml").javaRDD();
 
